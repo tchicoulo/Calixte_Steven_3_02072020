@@ -1,0 +1,219 @@
+@import "base/base";
+@import "utils/mixins";
+@import "utils/variables";
+@import "layout/header";
+@import "layout/footer";
+@import "utils/medias_queries";
+@import "components/lines";
+@import "utils/animations";
+
+h2 {
+  text-align: center;
+  margin: 0px 30px;
+}
+
+.menus {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
+  & .menu {
+    line-height: 0.4rem;
+    @include flex_centered;
+    flex-direction: column;
+    margin: 100px 40px;
+    width: 600px;
+    height: 600px;
+    border: 2px solid $color-shadow;
+    box-shadow: 5px 2px 7px $color-shadow;
+
+    &__note + h4 {
+      text-transform: uppercase;
+      font-style: italic;
+    }
+
+    & h4 {
+      font-size: 30px;
+      text-align: center;
+    }
+  }
+}
+
+@each $key, $val in $font-family {
+  .menu__#{$key} {
+    font-family: $val, cursive;
+    font-size: 50px;
+    margin-bottom: 110px;
+  }
+}
+
+@each $key, $val in $font-family {
+  .card__#{$key} {
+    font-family: $val;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.gradient {
+  &__chic {
+    background: linear-gradient(
+      251deg,
+      rgba(131, 58, 180, 1) 0%,
+      rgba(175, 58, 58, 1) 51%,
+      rgba(252, 176, 69, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__palette {
+    background: linear-gradient(
+      90deg,
+      rgba(10, 36, 0, 1) 0%,
+      rgba(0, 255, 42, 1) 64%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__delice {
+    background: linear-gradient(
+      319deg,
+      rgba(60, 64, 138, 1) 0%,
+      rgba(72, 59, 182, 1) 49%,
+      rgba(69, 140, 252, 1) 73%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__note {
+    background: linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 1) 0%,
+      rgba(83, 44, 0, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+  }
+}
+
+i {
+  background: rgb(215, 103, 151);
+  background: linear-gradient(
+    90deg,
+    rgba(215, 103, 151, 1) 0%,
+    rgba(255, 160, 57, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* prochainement... */
+.soon {
+  @include flex_centered;
+  margin: 0 auto;
+  width: 300px;
+  height: 50px;
+  background: $color-primary;
+  margin-bottom: 130px;
+  border-radius: 11px;
+  text-align: center;
+  vertical-align: middle;
+
+  &__heading {
+    margin-right: 3px;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 40px;
+    color: $color-yellow;
+  }
+}
+
+.point {
+  background: rgb(65, 65, 65);
+  margin: 7px 0 0 2px;
+  width: 8px;
+  height: 8px;
+  border: 1px solid gold;
+  border-radius: 50%;
+  animation-name: three_point;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+
+  &__two {
+    animation-delay: 0.5s;
+  }
+
+  &__three {
+    animation-delay: 1s;
+  }
+}
+
+/* la note.html + la palette ... */
+
+.card {
+  padding: 70px 0;
+  margin: 80px auto 160px auto;
+  @include flex_centered;
+  flex-direction: column;
+  width: 70%;
+  border: 2px solid rgba(173, 173, 173, 0.466);
+
+  &__note {
+    background: rgb(243, 228, 210);
+  }
+}
+
+table {
+  font-size: 20px;
+  padding: 25px 0 35px 0;
+  table-layout: auto;
+  width: 60%;
+  line-height: 35px;
+}
+
+.title-inline {
+  display: flex;
+  font-family: "Lobster", cursive;
+  justify-content: center;
+  align-items: center;
+
+  & > h1 {
+    margin-left: 8px;
+  }
+}
+
+/* colors pour chic.html */
+
+.colors {
+  &__top {
+    color: map-get($colors_chic, top);
+  }
+
+  &__middle {
+    color: map-get($map: $colors_chic, $key: middle);
+  }
+
+  &__bottom {
+    color: map-get($map: $colors_chic, $key: bottom);
+  }
+}
+
+@each $key, $val in $font-family {
+  .card__#{$key} {
+    font-family: $val;
+  }
+}
+
+.box {
+  width: 100%;
+  height: 50px;
+  @include flex_centered;
+  margin: 20px 0;
+}

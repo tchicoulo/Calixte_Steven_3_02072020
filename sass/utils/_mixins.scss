@@ -1,0 +1,19 @@
+@mixin flex_centered {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin lines {
+    width: 30%;
+    height: 35px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@mixin background-settings {
+    background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+}

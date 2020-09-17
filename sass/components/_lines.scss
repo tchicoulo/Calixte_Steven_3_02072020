@@ -1,0 +1,73 @@
+.line {
+    &__before {
+        @include lines;
+
+        &--note {
+            height: 5px;
+            width: 20%;
+            background: black;
+        }
+
+        &--palette {
+            background-image: url(../img/line_palette_before.png);
+            @include background-settings;
+        }
+
+        &__chic {
+            @include background-settings;
+
+            @each $key,
+            $val in $line_chic_before {
+                &--#{$key} {
+                    background-image: $val;
+                }
+            }
+        }
+
+        &__delice {
+
+            @each $key,
+            $val in $line_delice_before {
+                &--#{$key} {
+                    background-image: $val;
+                }
+            }
+        }
+    }
+
+    &__after {
+        @include lines;
+
+        &--note {
+            height: 5px;
+            width: 20%;
+            background: black;
+        }
+
+        &--palette {
+            background-image: url(../img/line_palette_after.png);
+            @include background-settings;
+        }
+
+        &__chic {
+            @include background-settings;
+
+            @each $key,
+            $val in $line_chic_after {
+                &--#{$key} {
+                    background-image: $val;
+                }
+            }
+        }
+
+        &__delice {
+
+            @each $key,
+            $val in $line_delice_after {
+                &--#{$key} {
+                    background-image: $val;
+                }
+            }
+        }
+    }
+}

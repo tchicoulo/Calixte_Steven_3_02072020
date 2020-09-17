@@ -1,0 +1,53 @@
+$color-primary : rgb(105, 167, 129);
+$color-yellow : #FCCA46;
+$color-shadow : rgb(59, 55, 53);
+
+$font-family: (
+    chic: 'Bad Script',
+    delice: 'Dancing Script',
+    note: 'Lobster',
+    palette: 'Satisfy'
+);
+
+$colors_chic : (
+    top : rgba(252,176,69,1),
+    middle: rgba(175,58,58,1),
+    bottom: rgba(131,58,180,1),
+);
+
+$colors_note : rgb(34, 16, 8);
+
+$colors_palette : (
+    left : linear-gradient(90deg, rgba(10,36,0,1) 0%, rgba(0,255,42,1) 64%),
+    right: linear-gradient(180deg, rgba(0,255,42,1) 64%,  rgba(10,36,0,1) 0%),
+);
+
+$colors_delice : (
+    top: rgba(60,64,138,1),
+    middle: rgba(72,59,182,1),
+    bottom: rgba(69,140,252,1),
+);
+
+$line_chic_before : (
+        top: url(../img/line_chic_hg.png),
+        middle: url(../img/line_chic_mg.png),
+        bottom: url(../img/line_chic_bg.png),
+    );
+
+$line_chic_after : (
+        top : url(../img/line_chic_hd.png),
+        middle: url(../img/line_chic_md.png),
+        bottom: url(../img/line_chic_bd.png),
+    );
+
+    $line_delice_before : (
+        top: url(../img/line_delice_hg.png),
+        middle: url(../img/line_delice_mg.png),
+        bottom: url(../img/line_delice_bg.png),
+    );
+
+$line_delice_after : (
+        top : url(../img/line_delice_md.png),
+        middle: url(../img/line_delice_md.png),
+        bottom: url(../img/line_delice_bd.png),
+    );
