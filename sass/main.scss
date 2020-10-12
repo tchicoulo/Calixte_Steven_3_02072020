@@ -66,8 +66,7 @@ a {
       rgba(175, 58, 58, 1) 51%,
       rgba(252, 176, 69, 1) 100%
     );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include background-clip-text-transparent;
   }
 
   &__palette {
@@ -76,8 +75,7 @@ a {
       rgba(10, 36, 0, 1) 0%,
       rgba(0, 255, 42, 1) 64%
     );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include background-clip-text-transparent;
   }
 
   &__delice {
@@ -87,8 +85,7 @@ a {
       rgba(72, 59, 182, 1) 49%,
       rgba(69, 140, 252, 1) 73%
     );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include background-clip-text-transparent;
   }
 
   &__note {
@@ -97,8 +94,8 @@ a {
       rgba(0, 0, 0, 1) 0%,
       rgba(83, 44, 0, 1) 100%
     );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    @include background-clip-text-transparent;
+    padding: 2rem;
     text-align: center;
   }
 }
@@ -110,8 +107,7 @@ i {
     rgba(215, 103, 151, 1) 0%,
     rgba(255, 160, 57, 1) 100%
   );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  @include background-clip-text-transparent;
 }
 
 /* prochainement... */

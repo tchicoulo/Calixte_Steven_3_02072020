@@ -1,19 +1,23 @@
 @mixin flex_centered {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @mixin lines {
-    width: 30%;
-    height: 35px;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+  width: 30%;
+  height: 35px;
+  @include background-settings;
+}
+
+@mixin background-clip-text-transparent {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 @mixin background-settings {
-    background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }

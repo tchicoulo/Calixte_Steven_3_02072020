@@ -1,9 +1,11 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-html, body {
-  margin: 0;
+html,
+body {
   font-family: sans-serif;
 }
 
@@ -38,12 +40,12 @@ html, body {
   background: #69a781;
 }
 .footer__heading {
-  color: #FCCA46;
+  color: #fcca46;
   padding: 0 30px;
   font-weight: lighter;
 }
 .footer__heading:hover {
-  animation: wiggle 0.5s backwards infinite;
+  animation: wiggle 0.5s infinite;
 }
 
 @media screen and (max-width: 1150px) {
@@ -77,8 +79,8 @@ h4 {
   width: 30%;
   height: 35px;
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
+  background-size: contain;
 }
 .line__before--note {
   height: 5px;
@@ -118,8 +120,8 @@ h4 {
   width: 30%;
   height: 35px;
   background-repeat: no-repeat;
-  background-size: contain;
   background-position: center;
+  background-size: contain;
 }
 .line__after--note {
   height: 5px;
@@ -294,31 +296,37 @@ a {
 
 .gradient__chic {
   background: linear-gradient(251deg, #833ab4 0%, #af3a3a 51%, #fcb045 100%);
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .gradient__palette {
   background: linear-gradient(90deg, #0a2400 0%, #00ff2a 64%);
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .gradient__delice {
   background: linear-gradient(319deg, #3c408a 0%, #483bb6 49%, #458cfc 73%);
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 .gradient__note {
   background: linear-gradient(90deg, black 0%, #532c00 100%);
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
+  padding: 2rem;
   text-align: center;
 }
 
 i {
   background: #d76797;
   background: linear-gradient(90deg, #d76797 0%, #ffa039 100%);
+  background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: transparent;
 }
 
 /* prochainement... */
@@ -340,7 +348,7 @@ i {
   font-weight: lighter;
   font-size: 20px;
   line-height: 40px;
-  color: #FCCA46;
+  color: #fcca46;
 }
 
 .point {
