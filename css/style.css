@@ -235,9 +235,9 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 100px 40px;
+  margin: 100px 60px;
   width: 600px;
-  height: 600px;
+  height: 500px;
   border: 2px solid #3b3735;
   box-shadow: 5px 2px 7px #3b3735;
 }
@@ -296,25 +296,21 @@ a {
 
 .gradient__chic {
   background: linear-gradient(251deg, #833ab4 0%, #af3a3a 51%, #fcb045 100%);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 .gradient__palette {
   background: linear-gradient(90deg, #0a2400 0%, #00ff2a 64%);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 .gradient__delice {
   background: linear-gradient(319deg, #3c408a 0%, #483bb6 49%, #458cfc 73%);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }
 .gradient__note {
   background: linear-gradient(90deg, black 0%, #532c00 100%);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   padding: 2rem;
@@ -324,7 +320,6 @@ a {
 i {
   background: #d76797;
   background: linear-gradient(90deg, #d76797 0%, #ffa039 100%);
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
 }

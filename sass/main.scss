@@ -22,9 +22,9 @@ h2 {
     line-height: 0.4rem;
     @include flex_centered;
     flex-direction: column;
-    margin: 100px 40px;
+    margin: 100px 60px;
     width: 600px;
-    height: 600px;
+    height: 500px;
     border: 2px solid $color-shadow;
     box-shadow: 5px 2px 7px $color-shadow;
 
