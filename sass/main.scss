@@ -40,6 +40,24 @@ h2 {
   }
 }
 
+$background-menus: (
+  note: rgb(252, 223, 219),
+  chic: rgb(255, 245, 254),
+  delice: rgb(249, 249, 249),
+  palette: rgb(253, 255, 253),
+);
+
+@each $key, $val in $background-menus {
+  .background-#{$key},
+  .card__#{$key} {
+    background-color: $val;
+  }
+}
+
+.background-delice {
+  background: red;
+}
+
 @each $key, $val in $font-family {
   .menu__#{$key} {
     font-family: $val, cursive;
@@ -160,10 +178,6 @@ i {
   flex-direction: column;
   width: 70%;
   border: 2px solid rgba(173, 173, 173, 0.466);
-
-  &__note {
-    background: rgb(243, 228, 210);
-  }
 }
 
 table {
