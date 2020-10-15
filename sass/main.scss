@@ -203,12 +203,6 @@ table {
   }
 }
 
-@each $key, $val in $font-family {
-  .card__#{$key} {
-    font-family: $val;
-  }
-}
-
 .box {
   width: 100%;
   height: 50px;
