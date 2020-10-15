@@ -56,12 +56,6 @@ h2 {
   }
 }
 
-@each $key, $val in $font-family {
-  .card__#{$key} {
-    font-family: $val;
-  }
-}
-
 a {
   text-decoration: none;
 }
@@ -103,7 +97,6 @@ a {
       rgba(83, 44, 0, 1) 100%
     );
     @include background-clip-text-transparent;
-    padding: 2rem;
     text-align: center;
   }
 }
@@ -168,6 +161,12 @@ i {
   flex-direction: column;
   width: 70%;
   border: 2px solid rgba(173, 173, 173, 0.466);
+}
+
+@each $key, $val in $font-family {
+  .card__#{$key} {
+    font-family: $val;
+  }
 }
 
 table {

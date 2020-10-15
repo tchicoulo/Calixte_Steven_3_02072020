@@ -307,22 +307,6 @@ h2 {
   padding: 30px;
 }
 
-.card__chic {
-  font-family: "Bad Script";
-}
-
-.card__delice {
-  font-family: "Dancing Script";
-}
-
-.card__note {
-  font-family: "Lobster";
-}
-
-.card__palette {
-  font-family: "Satisfy";
-}
-
 a {
   text-decoration: none;
 }
@@ -346,7 +330,6 @@ a {
   background: linear-gradient(90deg, black 0%, #532c00 100%);
   -webkit-background-clip: text;
   color: transparent;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -407,6 +390,22 @@ i {
   flex-direction: column;
   width: 70%;
   border: 2px solid rgba(173, 173, 173, 0.466);
+}
+
+.card__chic {
+  font-family: "Bad Script";
+}
+
+.card__delice {
+  font-family: "Dancing Script";
+}
+
+.card__note {
+  font-family: "Lobster";
+}
+
+.card__palette {
+  font-family: "Satisfy";
 }
 
 table {
