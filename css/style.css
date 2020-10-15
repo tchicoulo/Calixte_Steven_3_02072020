@@ -23,7 +23,6 @@ body {
 }
 .header a > img:hover {
   filter: brightness(120%);
-  width: 302px;
   height: 75px;
   transition: 0.3s;
 }
@@ -185,7 +184,6 @@ h2:before {
   width: 0;
   height: 1px;
   background: #525252;
-  transition: border-bottom 0.5s;
   transform: translateY(38px);
 }
 
