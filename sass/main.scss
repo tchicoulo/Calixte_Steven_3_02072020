@@ -52,6 +52,7 @@ h2 {
     font-family: $val, cursive;
     font-size: 50px;
     margin-bottom: 70px;
+    padding: 30px;
   }
 }
 
@@ -180,7 +181,6 @@ table {
 .title-inline {
   display: flex;
   font-family: "Lobster", cursive;
-  justify-content: center;
   align-items: center;
 
   & > h1 {

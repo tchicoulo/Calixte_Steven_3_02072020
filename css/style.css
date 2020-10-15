@@ -283,24 +283,28 @@ h2 {
   font-family: "Bad Script", cursive;
   font-size: 50px;
   margin-bottom: 70px;
+  padding: 30px;
 }
 
 .menu__delice {
   font-family: "Dancing Script", cursive;
   font-size: 50px;
   margin-bottom: 70px;
+  padding: 30px;
 }
 
 .menu__note {
   font-family: "Lobster", cursive;
   font-size: 50px;
   margin-bottom: 70px;
+  padding: 30px;
 }
 
 .menu__palette {
   font-family: "Satisfy", cursive;
   font-size: 50px;
   margin-bottom: 70px;
+  padding: 30px;
 }
 
 .card__chic {
@@ -416,7 +420,6 @@ table {
 .title-inline {
   display: flex;
   font-family: "Lobster", cursive;
-  justify-content: center;
   align-items: center;
 }
 .title-inline > h1 {
